@@ -1,0 +1,9 @@
+# SCSS
+*.css.map
+# MacOS
+.DS_Store
+# NodeJS
+node_modules
+# PHP
+composer.phar
+/vendor/
