@@ -1,4 +1,6 @@
 // sass --no-source-map --watch scss:css --style compressed
-h1 {
-    font-style: italic;
-}
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
