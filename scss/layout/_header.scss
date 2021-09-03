@@ -2,10 +2,14 @@ header {
     .approved-use {
         h5 {
             color: $secondary-color;
+            line-height: 1.6;
         }
         p {
             color: $gray-color;
+            margin-bottom: 12px;
+            line-height: 1.2;
         }
+        padding: 10px 32px;
         border-bottom: 1px solid $gray-color-2;
     }
 }
