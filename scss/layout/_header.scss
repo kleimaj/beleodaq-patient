@@ -26,6 +26,9 @@ header {
         @include respond(tab-land) {
             justify-content: center;
             flex-direction: column-reverse;
+            &:nth-child(3) {
+                order: 3;
+            }
 
             .logo {
                 width: 150px;
@@ -81,6 +84,29 @@ header {
                 //     width: 50%;
                 //     z-index: -1;
                 // }
+            }
+            .nav-links {
+                display: flex;
+                justify-content: flex-end;
+                
+                padding-top: 30px;
+                padding-bottom: 10px;
+                li {
+                    border-bottom: 2px solid $primary-color-2;
+                    padding: 6px;
+                    margin: 0 20px;
+                    &.active {
+                        border-bottom: 4px solid $primary-color-2;
+                        .nav-link {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .nav-link {
+                        font-size: 1.4rem;
+                        color: $gray-color;
+                    }
+                }
             }
         }
         
