@@ -26,6 +26,10 @@ header {
         @include respond(tab-land) {
             justify-content: center;
             flex-direction: column-reverse;
+
+            .logo {
+                width: 150px;
+            }
         }
 
         .nav-buttons {
