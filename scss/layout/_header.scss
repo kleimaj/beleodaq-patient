@@ -6,7 +6,7 @@ header {
         h5 {
             color: $secondary-color;
             line-height: 1.6;
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 text-align: center;
             }
         }
@@ -23,41 +23,62 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        @include respond(tab-land) {
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
 
-        .site-buttons {
+        .nav-buttons {
             display: flex;
-            font-size: 1.4rem;
-            .site-button {
-                color: $gray-color;
-                background-color: $white-color;
-
-                border-bottom: 1px solid $tertiary-color-2;
-                border-right: 1px solid $tertiary-color-2;
-
-                max-width: 240px;
-                min-width: 130px;
-                min-height: 30px;
-                padding: 5px 20px;
-
-                display: flex;
-                align-items: center;
+            flex-direction: column;
+            @include respond(tab-land) {
                 justify-content: center;
-
-                &.orange {
-                    color: #fff;
-                    background-color: $tertiary-color-2;
+                flex-direction: column-reverse;
+            }
+            #us-only {
+                margin-bottom: 20px;
+                text-align: right;
+                @include respond(tab-land) {
+                    margin: 20px;
+                    text-align: center;
                 }
             }
-            // &:after {
-            //     position: absolute;
-            //     right: 240px;
-            //     margin-top: 20px;
-            //     height: 1px;
-            //     background: $tertiary-color-2;
-            //     content: "";
-            //     width: 50%;
-            //     z-index: -1;
-            // }
+            .site-buttons {
+                display: flex;
+                font-size: 1.4rem;
+                .site-button {
+                    color: $gray-color;
+                    background-color: $white-color;
+    
+                    border-bottom: 1px solid $tertiary-color-2;
+                    border-right: 1px solid $tertiary-color-2;
+    
+                    max-width: 240px;
+                    min-width: 130px;
+                    min-height: 30px;
+                    padding: 5px 20px;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    &.orange {
+                        color: #fff;
+                        background-color: $tertiary-color-2;
+                    }
+                }
+                // &:after {
+                //     position: absolute;
+                //     right: 240px;
+                //     margin-top: 20px;
+                //     height: 1px;
+                //     background: $tertiary-color-2;
+                //     content: "";
+                //     width: 50%;
+                //     z-index: -1;
+                // }
+            }
         }
+        
     }
 }
