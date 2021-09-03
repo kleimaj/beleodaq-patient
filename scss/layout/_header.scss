@@ -3,6 +3,9 @@ header {
         h5 {
             color: $secondary-color;
             line-height: 1.6;
+            @include respond(tab-port) {
+                text-align: center;
+            }
         }
         p {
             color: $gray-color;
