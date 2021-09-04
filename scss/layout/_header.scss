@@ -1,4 +1,12 @@
 header {
+    z-index: 3;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    transition: all 0.2s ease-in-out;
+
     .approved-use {
         border-bottom: 1px solid $gray-color-2;
 
@@ -22,14 +30,16 @@ header {
 
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+
         @include respond(tab-land) {
-            justify-content: center;
             flex-direction: column-reverse;
         }
 
         .logo {
-            align-self: flex-end;
+            // align-self: flex-end;
+            padding: 10px;
+
             @include respond(tab-land) {
                 align-self: center;
                 order: 2;
@@ -110,6 +120,7 @@ header {
                     border-bottom: 2px solid $primary-color-2;
                     padding: 6px;
                     margin: 0 20px;
+                    margin-right: 0;
                     &.active {
                         border-bottom: 4px solid $primary-color-2;
                         .nav-link {
