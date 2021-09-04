@@ -32,6 +32,7 @@ header {
             align-self: flex-end;
             @include respond(tab-land) {
                 align-self: center;
+                order: 2;
                 img {
                     width: 150px;
                 }
@@ -43,6 +44,7 @@ header {
             @include respond(tab-land) {
                 justify-content: center;
                 flex-direction: column-reverse;
+                order: 2;
             }
             #us-only {
                 margin-bottom: 20px;
@@ -90,6 +92,9 @@ header {
             .nav-links {
                 display: flex;
                 justify-content: flex-end;
+                @include respond(tab-land) {
+                    display: none;
+                }
                 
                 padding-top: 30px;
                 padding-bottom: 10px;
@@ -111,6 +116,22 @@ header {
                 }
             }
         }
-        
+        .mobile-button {
+            display: none;
+            @include respond(tab-land) {
+                display: block;
+            }
+            cursor: pointer;
+
+            background-color: $secondary-color-3;
+            color: #fff;
+            border: none;
+            
+            padding: 5px;
+            margin: 20px;
+            width: 100%;
+            height: 35px;
+            font-size: 2rem;
+        }
     }
 }
