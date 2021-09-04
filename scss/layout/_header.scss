@@ -57,6 +57,13 @@ header {
             .site-buttons {
                 display: flex;
                 font-size: 1.4rem;
+                @include respond(tab-land) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .site-button {
+                        width: 240px;
+                    }
+                }
                 .site-button {
                     color: $gray-color;
                     background-color: $white-color;
@@ -72,6 +79,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    text-align: center;
     
                     &.orange {
                         color: #fff;
