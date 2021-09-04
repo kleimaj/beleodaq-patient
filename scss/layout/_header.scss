@@ -67,6 +67,7 @@ header {
             .site-buttons {
                 display: flex;
                 font-size: 1.4rem;
+                margin-right: 10px;
                 @include respond(tab-land) {
                     flex-wrap: wrap;
                     justify-content: center;
@@ -96,16 +97,22 @@ header {
                         background-color: $tertiary-color-2;
                     }
                 }
-                // &:after {
-                //     position: absolute;
-                //     right: 240px;
-                //     margin-top: 20px;
-                //     height: 1px;
-                //     background: $tertiary-color-2;
-                //     content: "";
-                //     width: 50%;
-                //     z-index: -1;
-                // }
+                &:after {
+                    position: absolute;
+                    @include respond(tab-land) {
+                        display: none;
+                    }
+                    @include respond(big-desktop) {
+                        width: 50%;
+                    }
+                    right: 80px;
+                    margin-top: 20px;
+                    height: 1px;
+                    background: $tertiary-color-2;
+                    content: "";
+                    width: 65%;
+                    z-index: -1;
+                }
             }
             .nav-links {
                 display: flex;
