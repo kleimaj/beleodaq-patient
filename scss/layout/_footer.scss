@@ -1,0 +1,30 @@
+footer {
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    margin: 0;
+    bottom: 0px;
+    left: 0px;
+	/* WEIRD COLOR? */
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,.3);
+    z-index: 2;
+
+    section {
+        padding: 0px 50px 50px 50px;
+    }
+    .isi {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 15px 50px;
+        
+        .isi-header {
+            font-size: 1.4rem;
+            color: $tertiary-color;
+        }
+        .isi-button {
+            color: $tertiary-color;
+            font-size: 1.4rem;
+        }
+    }
+}
