@@ -91,13 +91,18 @@
         </nav>
     </header>
     <!-- UI-View -->
-    <ui-view></ui-view>
+    <ui-view>
+        <main></main>
+    </ui-view>
     <footer>
         <section class="isi">
             <h5 class="isi-header">BELEODAQ Patient Important Safety Information</h5>
             <a href="" class="isi-button">
                 See More
                 <i class="fas fa-arrow-down"></i>
+            </a>
+            <a class="isi-button hidden" onclick="scrollBack()" href="javascript:;">
+                See Less <i class="fas fa-arrow-up"></i>
             </a>
         </section>
         <section class="hidden"></section>
