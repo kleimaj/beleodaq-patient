@@ -1,6 +1,3 @@
-import { ScrollEvents } from './scroll-events';
-ScrollEvents();
-
 var app = angular.module('BELEODAQ-Patient', ['ui.router']);
 var offsetHeight, footer;
 let menuToggled = false;
