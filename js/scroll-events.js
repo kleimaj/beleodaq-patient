@@ -2,6 +2,7 @@ let footer, innerHeight, offsetHeight;
 
 window.onscroll = function() {
     toggleISI();
+    checkSiteButtons();
     checkFooter();
 }
 window.onload = function () {
@@ -46,6 +47,14 @@ function checkFooter() {
     footer.lastElementChild.classList.add('hidden');
     document.querySelector('.less').classList.add('hidden');
     document.querySelector('.more').classList.remove('hidden');
+  }
+}
+// Check site-button visibility (for mobile view)
+function checkSiteButtons() {
+  if (window.scrollY > 0 && screen.width < 1200) {
+    document.querySelector('.site-buttons').style.display = 'none';
+  } else {
+    document.querySelector('.site-buttons').style.display = 'flex';
   }
 }
 
