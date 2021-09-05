@@ -14,6 +14,7 @@ header {
         h5 {
             color: $secondary-color;
             line-height: 1.6;
+            font-size: 1.4rem;
             @include respond(tab-land) {
                 text-align: center;
             }
@@ -21,6 +22,7 @@ header {
         p {
             color: $gray-color;
             margin-bottom: 12px;
+            font-size: 1.4rem;
             line-height: 1.2;
         }
     }
