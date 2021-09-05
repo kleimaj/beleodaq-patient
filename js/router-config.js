@@ -10,4 +10,10 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
       enabled: false,
     });
 
+    $stateProvider
+        .state('', {
+            url: '/',
+            templateUrl: 'landing-page.html'
+        });
+
 });
