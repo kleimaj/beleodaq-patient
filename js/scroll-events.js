@@ -9,6 +9,10 @@ window.onload = function () {
     innerHeight = window.innerHeight;
     offsetHeight = getAbsoluteHeight('main');
 };
+window.onresize = function () {
+  innerHeight = window.innerHeight;
+  offsetHeight = getAbsoluteHeight('main');
+};
 
 function toggleISI() {
     if (window.scrollY > 0) {
