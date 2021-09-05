@@ -1,6 +1,4 @@
 var app = angular.module('BELEODAQ-Patient', ['ui.router']);
-var offsetHeight, footer;
-let menuToggled = false;
 
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.when('', '/');
