@@ -8,6 +8,9 @@ main {
     margin-top: 270px;
     min-height: 75vh;
     padding: 60px 80px;
+    @include respond(tab-land) {
+        padding: 60px 20px;
+    }
 }
 a {
     text-decoration: none;

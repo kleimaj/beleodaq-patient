@@ -4,6 +4,9 @@
     color: #fff;
 
     width: 700px;
+    @include respond(tab-land) {
+        width: auto;
+    }
     font-size: 2.1rem;
     padding: 12px 24px;
     margin: 0 auto;
