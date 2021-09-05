@@ -1,5 +1,29 @@
 #landing-page {
     .hero {
         display: flex;
+        width: 100%;
+
+        img {
+            width: 50%;
+        }
+        .cta {
+            width: 50%;
+            background-color: $primary-color-3;
+            color: #fff;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 30px;
+            line-height: 4rem;
+        }
+        @include respond(tab-land) {
+            flex-direction: column;
+            align-items: center;
+            .cta, img {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }
