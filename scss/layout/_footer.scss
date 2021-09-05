@@ -15,9 +15,53 @@ footer {
             color: $primary-color;
             font-size: 1.4rem;
         }
+        .group {
+            margin: 15px 0;
+            p {
+                margin: 0;
+            }
+        }
         p {
+            margin: 15px 0;
+        }
+        p, li {
             font-weight: 300;
             color: #000;
+            line-height: 1.7rem;
+        }
+        ul {
+            li {
+            font-size: 1.4rem;
+                &::before {
+                    // https://www.w3schools.com/howto/howto_css_bullet_color.asp
+                    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                    color: $primary-color-3; /* Change the color */
+                    font-weight: bold; /* If you want it to be bold */
+                    display: inline-block; /* Needed to add space between the bullet and the text */
+                    width: 1em; /* Also needed for space (tweak if needed) */
+                }
+                ul li {
+                    margin-left: 10px;
+                    &::before {
+                        content: "–";
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        ol {
+            counter-reset: item;
+            display: inline;
+
+            li {
+                list-style-type: none;
+                counter-increment: item;
+                font-size: 1.4rem;
+                &:before {
+                    font-weight: 600;
+                    content: counter(item) ". ";
+                }
+            }
         }
 
     }
