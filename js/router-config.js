@@ -1,4 +1,4 @@
-var app = angular.module('BELEODAQ', ['ui.router']);
+var app = angular.module('BELEODAQ-Patient', ['ui.router']);
 var offsetHeight, footer;
 let menuToggled = false;
 
@@ -11,7 +11,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     });
 
     $stateProvider
-        .state('', {
+        .state('LANDING-PAGE', {
             url: '/',
             templateUrl: 'landing-page.html'
         });
