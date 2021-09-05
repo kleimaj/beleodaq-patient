@@ -51,7 +51,7 @@ function checkFooter() {
 }
 // Check site-button visibility (for mobile view)
 function checkSiteButtons() {
-  if (window.scrollY > 0 && screen.width < 1200) {
+  if (window.scrollY > 0 && $(window).width() < 1200) {
     document.querySelector('.site-buttons').style.display = 'none';
   } else {
     document.querySelector('.site-buttons').style.display = 'flex';

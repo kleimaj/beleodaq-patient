@@ -89,6 +89,9 @@ footer {
         justify-content: space-between;
         .bottom_col:first-of-type {
             text-align: right;
+            @include respond(tab-land) {
+                text-align: left;
+            }
         }
         @include respond(tab-land) {
             flex-direction: column;
