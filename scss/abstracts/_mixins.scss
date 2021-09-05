@@ -52,3 +52,10 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     border-bottom: 0;
   }
   
+  @mixin box-gradient {
+    background: rgb(22,97,118);
+    background: -moz-linear-gradient(0deg, rgba(22,97,118,0.15) 0%, rgba(22,97,118,0.1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(22,97,118,0.15) 0%, rgba(22,97,118,0.1) 100%);
+    background: linear-gradient(0deg, rgba(22,97,118,0.15) 0%, rgba(22,97,118,0.1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166176",endColorstr="#166176",GradientType=1);
+  }
