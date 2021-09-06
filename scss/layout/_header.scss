@@ -83,6 +83,10 @@ header {
     
                     border-bottom: 1px solid $tertiary-color-2;
                     border-right: 1px solid $tertiary-color-2;
+
+                    @include respond(tab-land) {
+                        border-right: none;
+                    }
     
                     max-width: 240px;
                     min-width: 130px;

@@ -18,6 +18,10 @@
             line-height: 4rem;
             
             border-left: 1px solid #fff;
+
+            @include respond(tab-land) {
+                padding: 30px;
+            }
         }
         @include respond(tab-land) {
             flex-direction: column;
