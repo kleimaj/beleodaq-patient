@@ -1,26 +1,30 @@
-let footer, innerHeight, offsetHeight;
+let footer, innerHeight, offsetHeight, menuToggled;
 
 window.onscroll = function() {
-    toggleISI();
-    checkSiteButtons();
-    checkFooter();
+  toggleISI();
+  checkSiteButtons();
+  checkFooter();
 }
 window.onload = function () {
-    footer = document.querySelector('footer');
-    innerHeight = window.innerHeight;
-    offsetHeight = getAbsoluteHeight('main');
+  footer = document.querySelector('footer');
+  innerHeight = window.innerHeight;
+  offsetHeight = getAbsoluteHeight('main');
+  attachMobileMenu();
 };
 window.onresize = function () {
   innerHeight = window.innerHeight;
   offsetHeight = getAbsoluteHeight('main');
+  if ($(window).width() >= 1200 && menuToggled) {
+    toggleMenu();
+  }
 };
 
 function toggleISI() {
-    if (window.scrollY > 0) {
-        document.querySelector('.approved-use').style.display = 'none';
-      } else {
-        document.querySelector('.approved-use').style.display = 'block';
-      }
+  if (window.scrollY > 0) {
+      document.querySelector('.approved-use').style.display = 'none';
+    } else {
+      document.querySelector('.approved-use').style.display = 'block';
+    }
 }
 
 // Get Inner and Outer height of element (includes margin)
@@ -75,4 +79,23 @@ function scrollBack() {
   footer.lastElementChild.classList.add('hidden');
   document.querySelector('.less').classList.add('hidden');
   document.querySelector('.more').classList.remove('hidden');
+}
+
+// Mobile Menu Listener
+function attachMobileMenu() {
+  document.querySelector('.mobile-button')
+    .addEventListener('click', () => {
+      toggleMenu();
+    })
+}
+
+function toggleMenu() {
+  menuToggled = !menuToggled;
+  document.querySelector('.mobile-links').classList.toggle('hidden');
+  if (menuToggled) {
+    // Change fa class
+    document.getElementById('menu-button').classList.replace('fa-bars','fa-times');
+  } else {
+    document.getElementById('menu-button').classList.replace('fa-times', 'fa-bars');
+  }
 }

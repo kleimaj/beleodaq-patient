@@ -24,6 +24,9 @@ header {
             margin-bottom: 12px;
             font-size: 1.4rem;
             line-height: 1.2;
+            &:last-of-type {
+                margin: 0;
+            }
         }
     }
 
@@ -168,9 +171,9 @@ header {
             font-size: 2rem;
         }
         .mobile-links {
-            display: none;
+            // display: hidden;
             @include respond(tab-land) {
-                // display: flex;
+                display: flex;
                 flex-direction: column;
                 li {
                     text-align: center;
