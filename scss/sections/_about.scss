@@ -1,0 +1,85 @@
+#ptcl {
+    h2 {
+        padding-bottom: 20px;
+    }
+    h3 {
+        padding: 15px 0;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+    .content-group {
+        display: flex;
+        align-items: center;
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+    }
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        min-height: 222px;
+        max-height: 330px;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        img {
+            padding: 20px;
+        }
+        hr {
+            margin: 0;
+            height: 200px;
+            border-color: $gray-color-3;
+            background-color: $gray-color-3;
+        }
+
+        @include round-corners;
+        border: 1px solid $secondary-color-3;
+
+        h5 {
+            color: $secondary-color-4;
+        }
+        p {
+            width: 50%;
+            line-height: 2.5rem;
+        }
+        .box-figure {
+            text-align: center;
+        }
+        &.small {
+            width: 50%;
+            @include respond(tab-port) {
+                width: 100%;
+            }
+        }
+        &.large {
+            width: 100%;
+            img {
+                width: 50%;
+                @include respond(big-desktop) {
+                    width: 30%;
+                }
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+        }
+        @include respond(tab-land) {
+            width: auto;
+            hr {
+                border: none;
+                height: 0;
+            }
+        }
+        @include respond(tab-port) {
+            flex-direction: column;
+            border: none;
+            max-height: inherit;
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
