@@ -59,3 +59,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     background: linear-gradient(0deg, rgba(22,97,118,0.15) 0%, rgba(22,97,118,0.1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166176",endColorstr="#166176",GradientType=1);
   }
+  @mixin round-corners {
+    border-radius: 60px;
+  }
