@@ -134,3 +134,15 @@
         }
     }
 }
+#works {
+    display: flex;
+    flex-direction: column;
+
+    h2,h3 {
+        padding-bottom: 20px;
+    }
+    img {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
