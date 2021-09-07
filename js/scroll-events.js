@@ -41,6 +41,8 @@ function getAbsoluteHeight(el) {
 
 // Check footer
 function checkFooter() {
+  innerHeight = window.innerHeight;
+  offsetHeight = getAbsoluteHeight('main');
   if (innerHeight + window.scrollY >= offsetHeight - 1) {
     footer.style.position = 'relative';
     footer.lastElementChild.classList.remove('hidden');

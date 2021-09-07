@@ -11,6 +11,9 @@
     .content-group {
         display: flex;
         align-items: center;
+        .col {
+            padding: 25px;
+        }
         @include respond(tab-port) {
             flex-direction: column;
         }
