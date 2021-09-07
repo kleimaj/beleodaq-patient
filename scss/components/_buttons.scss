@@ -18,3 +18,36 @@
         padding: 0 15px;
     }
 }
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    @include respond(tab-land) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .tab {
+        font-size: 1.8rem;
+        font-weight: 600;
+        
+        color: $secondary-color-3;
+        border: 1px solid $secondary-color-3;
+        opacity: .5;
+
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            border: 2px solid $secondary-color-3;
+            opacity: 1;
+            background-color: $secondary-color-5;
+        }
+    }
+}
