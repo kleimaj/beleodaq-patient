@@ -68,7 +68,33 @@
     }
 }
 #expect {
-
+    h2,p,img {
+        margin-bottom: 40px;
+    }
+    .group {
+        display: flex;
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+        .image-wrapper {
+            width: 33%;
+            @include respond(tab-land) {
+                margin: 0 auto;
+                width: auto;
+            }
+            img {
+                @include round-corners;
+                border: 3px solid $primary-color;
+                width: 380px;
+                height: 380px;
+                object-fit: cover;
+                @include respond(tab-port) {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
 }
 #preparing {
 
