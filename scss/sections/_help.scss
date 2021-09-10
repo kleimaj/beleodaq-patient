@@ -1,0 +1,43 @@
+#help {
+    h2,h3 {
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    p,ul {
+        margin-bottom: 40px;
+        &.label {
+            margin-bottom: 0;
+        }
+    }
+    .chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include round-corners;
+        border: 2px solid $secondary-color-3;
+        padding: 25px;
+        margin-bottom: 40px;
+
+        @include respond(big-desktop) {
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .image-wrapper {
+            text-align: center;
+
+            img {
+                @include respond(tab-land) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#results {
+
+}
