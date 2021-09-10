@@ -39,5 +39,17 @@
     }
 }
 #results {
-
+    h2,h3,p {
+        margin-bottom: 40px;
+    }
+    h3.label {
+        margin-bottom: 0;
+    }
+    p.small {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    ul {
+        margin-bottom: 40px;
+    }
 }

@@ -65,6 +65,16 @@ main {
                 width: 1em; /* Also needed for space (tweak if needed) */
             }
         }
+        ul {
+            margin-bottom: 0;
+            li {
+                margin-left: 10px;
+                &::before {
+                content: "–";
+                margin-left: 5px;
+                }
+            }
+        }
     }
 }
 //   Font Weight
