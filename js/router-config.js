@@ -53,4 +53,32 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
           url: '/side-effects',
           templateUrl: 'content/side-effects/side-effects.html'
         })
+        .state('SUPPORT', {
+          url: '/support-and-resources/star',
+          templateUrl: 'content/support/support.html'
+        })
+        .state('QUESTIONS', {
+          url: '/support-and-resources/questions-for-your-doctor',
+          templateUrl: 'content/support/questions.html'
+        })
+        .state('COPING', {
+          url: '/support-and-resources/coping-with-treatment',
+          templateUrl: 'content/support/coping.html'
+        })
+        .state('FAQS', {
+          url: '/support-and-resources/faqs',
+          templateUrl: 'content/support/faqs.html'
+        })
+        .state('TIPS', {
+          url: '/support-and-resources/tips-for-caregivers',
+          templateUrl: 'content/support/tips.html'
+        })
+        .state('CHECKLIST', {
+          url: '/support-and-resources/pretreatment-checklist',
+          templateUrl: 'content/support/checklist.html'
+        })
+        .state('RESOURCES', {
+          url: '/support-and-resources/helpful-resources',
+          templateUrl: 'content/support/resources.html'
+        })
 });
