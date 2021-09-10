@@ -23,8 +23,8 @@
             img {
                 @include round-corners;
                 border: 3px solid $primary-color;
-                width: 380px;
-                height: 380px;
+                width: 576px;
+                height: 413px;
                 object-fit: cover;
                 @include respond(tab-port) {
                     width: 250px;
