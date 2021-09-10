@@ -41,4 +41,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
           url: '/taking-beleodaq/monitoring-your-treatment',
           templateUrl: 'content/taking/monitoring.html'
         })
+        .state('HELP', {
+          url: '/how-BELEODAQ-may-help/right-for-you',
+          templateUrl: 'content/help/help.html'
+        })
+        .state('RESULTS', {
+          url: '/how-BELEODAQ-may-help/clinical-trial-results',
+          templateUrl: 'content/help/results.html'
+        })
 });
