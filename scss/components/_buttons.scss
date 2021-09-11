@@ -29,6 +29,17 @@
         justify-content: center;
         margin: 0 auto;
     }
+    &.bigger {
+        .tab {
+            height: 85px;
+            @include respond(tab-land) {
+                height: 30px;
+            }
+            @include respond(big-desktop) {
+                height: 30px;
+            }
+        }
+    }
     .tab {
         font-size: 1.8rem;
         font-weight: 600;
