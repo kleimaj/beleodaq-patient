@@ -35,3 +35,54 @@
         }
     }
 }
+#questions {
+    h2 {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .bullet-box {
+        display: flex;
+        justify-content: center;
+        @include round-corners;
+        border: 2px solid $secondary-color-3;
+        padding: 20px 30px;
+        margin-bottom: 40px;
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .icon-wrapper {
+            align-self: center;
+            text-align: center;
+            width: 20%;
+            padding: 30px;
+            img {
+                width: 100%;
+            }
+            @include respond(tab-land) {
+                order: -1;
+            }
+            @include respond(big-desktop) {
+                width: 15%;
+            }
+        }
+    }
+    .jumbo-box {
+        @include jumbo-gradient;
+        @include round-corners;
+        padding: 30px 40px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
+        @include respond(tab-land) {
+            text-align: left;
+        }
+    }
+}
