@@ -141,6 +141,48 @@
         }
     }
 }
+#faqs {
+
+}
+#tips {
+    h2 {
+        margin-bottom: 15px;
+    }
+    p,ul {
+        margin-bottom: 40px;
+    }
+    p.label {
+        margin-bottom: 5px;
+    }
+    p strong {
+        color: $gray-color-2;
+    }
+    .group {
+        display: flex;
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+
+        .image-wrapper {
+            width: 55%;
+            margin: 20px auto;
+            img {
+                @include round-corners;
+                border: 3px solid $primary-color;
+                width: 500px;
+                height: 380px;
+                object-fit: cover;
+                @include respond(tab-port) {
+                    width: 100%;
+                    // height: 300px;
+                }
+            }
+            @include respond(tab-port) {
+                width: 70%;
+            }
+        }
+    }
+}
 .jumbo-box {
     @include jumbo-gradient;
     @include round-corners;
