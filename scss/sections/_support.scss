@@ -239,6 +239,33 @@
         text-align: center
     }
 }
+#resources {
+    h3 {
+        margin-bottom: 40px;
+    }
+    h4 {
+        margin-bottom: 10px;
+    }
+    a {
+        font-size: 2.1rem;
+    }
+    .group {
+        display: flex;
+        align-items: center;
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+        .col {
+            width: 50%;
+            @include respond(tab-land) {
+                width: 100%;
+            }
+        }
+        .item {
+            margin-bottom: 40px;
+        }
+    }
+}
 .jumbo-box {
     @include jumbo-gradient;
     @include round-corners;
