@@ -11,6 +11,9 @@
             margin-bottom: 0;
         }
     }
+    p,li {
+        line-height: 2.5rem;
+    }
     .chart {
         display: flex;
         flex-direction: column;
@@ -47,6 +50,9 @@
     }
     p.small {
         font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    p {
         line-height: 2.5rem;
     }
     ul {

@@ -7,6 +7,7 @@
     }
     p {
         padding-bottom: 20px;
+        line-height: 2.5rem;
     }
     .content-group {
         display: flex;
@@ -98,6 +99,9 @@
         &:first-of-type {
             padding-bottom: 5px;
         }
+    }
+    p,li {
+        line-height: 2.5rem;
     }
     ul {
         padding-bottom: 30px;
