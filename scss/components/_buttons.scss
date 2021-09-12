@@ -86,3 +86,16 @@
         padding-bottom: 15px;
     }
 }
+.accordian-btn {
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid $tertiary-color;
+    border-bottom: 1px solid $tertiary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}

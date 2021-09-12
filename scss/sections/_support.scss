@@ -143,7 +143,16 @@
     }
 }
 #faqs {
-
+    p {
+        margin-bottom: 40px;
+    }
+    .info-box {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        a {
+            font-size: 2.1rem;
+        }
+    }
 }
 #tips {
     h2 {
