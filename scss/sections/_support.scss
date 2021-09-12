@@ -249,7 +249,14 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        text-align: center
+        text-align: center;
+        width: 50%;
+        @include respond(tab-land) {
+            align-self: center;
+        }
+        .icon-wrapper {
+            margin: 20px;
+        }
     }
 }
 #resources {
