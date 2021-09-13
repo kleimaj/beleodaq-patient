@@ -107,21 +107,24 @@
         padding-bottom: 30px;
     }
     .section-group {
-        display: flex;
+        // display: flex;
         img {
-            width: 50%;
+            // width: 50%;
+            float: right;
+            width: 500px;
             margin: 25px;
             border: 3px solid $primary-color;
             border-radius: 15px;
             opacity: .9;
             align-self: baseline
         }
-        @include respond(big-desktop) {
-            img {
-                width: 40%;
-            }
-        }
+        // @include respond(big-desktop) {
+        //     img {
+        //         width: 40%;
+        //     }
+        // }
         @include respond(tab-land) {
+            display: flex;
             flex-direction: column-reverse;
             align-content: center;
             justify-content: center;
@@ -132,6 +135,7 @@
         }
     }
     .grad-box {
+        clear: both;
         @include respond(big-desktop) {
             width: 70%;
             margin: 30px auto;
