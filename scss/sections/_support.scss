@@ -157,6 +157,9 @@
             font-size: 2.1rem;
         }
     }
+    .next-btn {
+        margin-top: 40px;
+    }
 }
 #tips {
     h2 {
@@ -265,9 +268,13 @@
     }
     h4 {
         margin-bottom: 10px;
+        color: $gray-color-2;
     }
     a {
         font-size: 2.1rem;
+    }
+    p {
+        margin-top: 10px;
     }
     .group {
         display: flex;
