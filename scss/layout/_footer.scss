@@ -11,6 +11,9 @@ footer {
 
     section {
         padding: 15px 80px;
+        @include respond(tab-land) {
+            padding: 15px 20px;
+        }
         h5 {
             color: $primary-color;
             font-size: 1.4rem;
