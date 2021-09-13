@@ -51,6 +51,7 @@ main {
             font-weight: 300;
             color: $gray-color-2;
             padding: 5px 0;
+            padding-left: 1em;
             &.alt-bullet {
                 &::before {
                     color: $secondary-color-3;
@@ -62,7 +63,8 @@ main {
                 color: $tertiary-color; /* Change the color */
                 font-weight: bold; /* If you want it to be bold */
                 display: inline-block; /* Needed to add space between the bullet and the text */
-                width: 1em; /* Also needed for space (tweak if needed) */
+                // width: 1em; /* Also needed for space (tweak if needed) */
+                text-indent: -1em;
             }
         }
         ul {
