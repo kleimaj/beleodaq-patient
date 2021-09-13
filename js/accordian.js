@@ -7,10 +7,10 @@ document.querySelectorAll('.accordian-btn')
 })
 
 function toggleInfo(event) {
-    let info = document.getElementById('info-'+event.target.key);
+    let info = document.getElementById('info-'+event.currentTarget.key);
     info.classList.toggle('hidden');
 
-    let icon = event.target.children[1];
+    let icon = event.currentTarget.children[1];
     // Toggle Icons
     if (icon.classList.contains('fa-caret-up')) {
         icon.classList.replace('fa-caret-up','fa-caret-down');
