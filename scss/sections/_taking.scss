@@ -12,9 +12,13 @@
         margin-bottom: 30px;
     }
     .group {
-        display: flex;
+        .image-wrapper {
+            float: right;
+            margin-left: 20px;
+        }
         @include respond(tab-land) {
-            flex-direction: column;
+            display: flex;
+            flex-direction: column-reverse;
             align-items: center;
         }
     }
