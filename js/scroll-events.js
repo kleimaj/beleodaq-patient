@@ -89,6 +89,7 @@ function attachMobileMenu() {
     .addEventListener('click', () => {
       toggleMenu();
     })
+    Array.from(document.querySelector('.mobile-links').getElementsByTagName('a')).forEach((link) => link.addEventListener('click', toggleMenu));
 }
 
 function toggleMenu() {

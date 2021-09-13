@@ -7,7 +7,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode({
       enabled: false,
     });
-    // $uiViewScrollProvider.useAnchorScroll();
 
     $stateProvider
         .state('LANDING-PAGE', {
@@ -176,8 +175,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 app.run(['$transitions', function ($transitions) {
   $transitions.onSuccess({}, function () {
-      // Hide mobile menu
-      document.querySelector('.mobile-links').classList.add('hidden')
       // Scroll to top
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto';
