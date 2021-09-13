@@ -6,11 +6,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 main {
-    margin-top: 270px;
+    margin-top: 280px;
     min-height: 75vh;
-    padding: 30px 80px;
+    padding: 40px 80px;
     @include respond(tab-land) {
         padding: 30px;
+        margin-top: 440px;
+    }
+    @include respond(phone) {
+        margin-top: 580px;
     }
 }
 a {
