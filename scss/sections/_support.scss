@@ -176,17 +176,20 @@
         color: $gray-color-2;
     }
     .group {
-        display: flex;
+        // display: flex;
         @include respond(tab-land) {
-            flex-direction: column;
+            display: flex;
+            flex-direction: column-reverse;
         }
 
         .image-wrapper {
-            width: 55%;
+            // width: 55%;
+            float: right;
             margin: 20px auto;
             img {
                 @include round-corners;
                 border: 3px solid $primary-color;
+                margin: 25px;
                 width: 500px;
                 height: 380px;
                 object-fit: cover;
@@ -238,24 +241,29 @@
         }
     }
     .group {
-        display: flex;
         @include respond(tab-land) {
-            flex-direction: column;
+            display: flex;
+            flex-direction: column-reverse;
         }
         .col {
             padding-right: 30px;
         }
     }
     .jumbo-box {
+        float: right;
         max-height: 260px;
+        max-width: 300px;
+        margin: 25px;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width: 50%;
+        // width: 50%;
         @include respond(tab-land) {
             align-self: center;
+            width: 80%;
+            max-width: 80%;
         }
         .icon-wrapper {
             margin: 20px;
