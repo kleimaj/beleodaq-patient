@@ -86,8 +86,9 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 app.run(['$transitions', function ($transitions) {
   $transitions.onSuccess({}, function () {
-      // html.style.scrollBehavior = 'auto';
-
+      // Hide mobile menu
+      document.querySelector('.mobile-links').classList.add('hidden')
+      // Scroll to top
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto';
       document.body.scrollTop = document.documentElement.scrollTop = 0;
