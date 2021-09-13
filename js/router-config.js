@@ -7,6 +7,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode({
       enabled: false,
     });
+    // $uiViewScrollProvider.useAnchorScroll();
 
     $stateProvider
         .state('LANDING-PAGE', {
@@ -82,3 +83,14 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
           templateUrl: 'content/support/resources.html'
         })
 });
+
+app.run(['$transitions', function ($transitions) {
+  $transitions.onSuccess({}, function () {
+      // html.style.scrollBehavior = 'auto';
+
+      const html = document.querySelector('html')
+      html.style.scrollBehavior = 'auto';
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      html.style.scrollBehavior = '';
+  })
+}]);
