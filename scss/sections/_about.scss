@@ -36,6 +36,9 @@
             padding: 20px;
             @include respond(tab-land) {
                 padding: 0;
+                width: 40%;
+            }
+            @include respond(phone) {
                 width: 90%;
             }
         }
@@ -51,6 +54,9 @@
 
         h5 {
             color: $secondary-color-4;
+            @include respond(tab-land) {
+                margin-bottom: 15px;
+            }
         }
         p {
             width: 50%;
@@ -72,7 +78,7 @@
                 @include respond(big-desktop) {
                     width: 30%;
                 }
-                @include respond(tab-port) {
+                @include respond(phone) {
                     width: 100%;
                 }
             }
