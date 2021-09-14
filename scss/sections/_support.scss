@@ -16,7 +16,7 @@
     }
     .group {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         margin: 15px 0;
         .col {
             padding: 0 15px;
@@ -32,6 +32,14 @@
             align-items: center;
             .image-wrapper {
                 width: 100%;
+            }
+        }
+        @include respond(big-desktop) {
+            .image-wrapper {
+                width: 40%;
+                img {
+                    width: 80%;
+                }
             }
         }
     }
