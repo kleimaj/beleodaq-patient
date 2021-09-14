@@ -65,7 +65,9 @@ header {
                 margin-bottom: 20px;
                 text-align: right;
                 @include respond(tab-land) {
-                    margin: 20px;
+                    // margin: 20px;
+                    line-height: 1.5rem;
+                    margin-bottom: 0;
                     text-align: center;
                 }
             }
@@ -76,6 +78,8 @@ header {
                 @include respond(tab-land) {
                     flex-wrap: wrap;
                     justify-content: center;
+                    margin-right: 0;
+                    margin-bottom: 10px;
                     .site-button {
                         width: 240px;
                     }

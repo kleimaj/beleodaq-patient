@@ -14,6 +14,9 @@
         align-items: center;
         .col {
             padding: 25px;
+            @include respond(tab-land) {
+                padding: 0;
+            }
         }
         @include respond(tab-port) {
             flex-direction: column;
@@ -31,6 +34,10 @@
         margin-bottom: 45px;
         img {
             padding: 20px;
+            @include respond(tab-land) {
+                padding: 0;
+                width: 90%;
+            }
         }
         hr {
             margin: 0;
@@ -116,7 +123,7 @@
             border: 3px solid $primary-color;
             border-radius: 15px;
             opacity: .9;
-            align-self: baseline
+            align-self: baseline;
         }
         // @include respond(big-desktop) {
         //     img {
@@ -131,6 +138,11 @@
             img {
                 width: 70%;
                 align-self: center;
+            }
+        }
+        @include respond(phone) {
+            img {
+                width: 90%;
             }
         }
     }

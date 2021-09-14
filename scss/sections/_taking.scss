@@ -15,6 +15,9 @@
         .image-wrapper {
             float: right;
             margin-left: 20px;
+            @include respond(tab-land) {
+                margin-left: 0;
+            }
         }
         @include respond(tab-land) {
             display: flex;
@@ -33,7 +36,7 @@
             img {
                 width: 100%;
                 @include respond(tab-land) {
-                    width: 70%;
+                    width: 90%;
                 }
             }
             @include respond(tab-land) {
@@ -63,6 +66,7 @@
             @include respond(tab-land) {
                 text-align: left;
                 align-items: center;
+                width: auto;
             }
             .next-btn {
                 margin: 0;
@@ -75,6 +79,9 @@
     }
 }
 #expect{
+    h2 {
+        line-height: 3.5rem;
+    }
     h2,p,img {
         margin-bottom: 40px;
     }
@@ -152,6 +159,7 @@
     }
     h3 {
         margin-bottom: 15px;
+        line-height: 3rem;
         &:last-of-type {
             margin-bottom: 40px;
         }
