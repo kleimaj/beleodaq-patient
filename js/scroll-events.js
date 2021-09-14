@@ -22,9 +22,11 @@ window.onresize = function () {
 function toggleISI() {
   if (window.scrollY > 0) {
       document.querySelector('.approved-use').style.display = 'none';
+      document.querySelector('main').classList.remove('push');
       // document.querySelector('main').style.marginTop = '250px';
     } else {
       document.querySelector('.approved-use').style.display = 'block';
+      document.querySelector('main').classList.add('push');
       // document.querySelector('main').style.marginTop = "";
     }
 }

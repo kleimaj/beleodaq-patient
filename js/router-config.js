@@ -178,7 +178,7 @@ app.run(['$transitions', function ($transitions) {
       // Scroll to top
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto';
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      document.body.scrollTop = document.documentElement.scrollTop = 10;
       html.style.scrollBehavior = '';
   })
 }]);
