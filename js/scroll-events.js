@@ -73,14 +73,14 @@ function scrollToFooter() {
   footer.style.position = 'relative';
   footer.lastElementChild.classList.remove('hidden');
   offsetHeight = getAbsoluteHeight('main');
-  window.scrollTo(0, offsetHeight - 170);
+  window.scrollTo(0, offsetHeight - 300);
   document.querySelector('.less').classList.add('hidden');
   document.querySelector('.more').classList.remove('hidden');
 }
 
 // scroll back to main content
 function scrollBack() {
-  window.scrollTo(0, -offsetHeight);
+  window.scrollTo(0, 10);
   footer.style.position = 'fixed';
   footer.lastElementChild.classList.add('hidden');
   document.querySelector('.less').classList.add('hidden');
