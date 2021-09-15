@@ -86,7 +86,7 @@ function scrollBack() {
   document.querySelector('.less').classList.add('hidden');
   document.querySelector('.more').classList.remove('hidden');
 }
-function scrollBack() {
+function approvedUse() {
   window.scrollTo(0, 0);
 }
 
