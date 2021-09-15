@@ -86,6 +86,9 @@ function scrollBack() {
   document.querySelector('.less').classList.add('hidden');
   document.querySelector('.more').classList.remove('hidden');
 }
+function scrollBack() {
+  window.scrollTo(0, 0);
+}
 
 // Mobile Menu Listener
 function attachMobileMenu() {
