@@ -117,11 +117,12 @@
         }
         .image-wrapper {
             position: relative;
+            width: 50%;
             img {
                 width: 100%;
-                @include respond(tab-land) {
-                    width: 70%;
-                }
+            }
+            @include respond(tab-land) {
+                width: 100%;
             }
             @include respond(tab-land) {
                 text-align: center;
