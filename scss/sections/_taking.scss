@@ -88,6 +88,11 @@
     p {
         line-height: 2.5rem;
     }
+    .image-wrapper {
+        img {
+            object-position: 0px -50px;
+        }
+    }
 }
 #preparing {
     h2,h3 {
