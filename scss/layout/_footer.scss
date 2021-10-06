@@ -50,10 +50,10 @@ footer {
 
                 }
                 ul li {
-                    // margin-left: 5px;
+                    margin-left: 5px;
                     &::before {
                         content: "–";
-                        margin-left: 5px;
+                        // margin-left: 5px;
                     }
                 }
             }
