@@ -20,7 +20,8 @@ window.onresize = function () {
 };
 
 function toggleISI() {
-  if (window.scrollY > 0) {
+  let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+  if (window.scrollY > 0 && isMobile) {
       document.querySelector('.approved-use').style.display = 'none';
       document.querySelector('main').classList.remove('push');
       // document.querySelector('main').style.marginTop = '250px';
