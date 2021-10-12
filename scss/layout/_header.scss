@@ -21,7 +21,7 @@ header {
         }
         p {
             color: $gray-color;
-            margin-bottom: 12px;
+            // margin-bottom: 12px;
             font-size: 1.4rem;
             line-height: 1.2;
             &:last-of-type {
@@ -63,7 +63,8 @@ header {
                 order: 2;
             }
             #us-only {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                margin-top: -10px;
                 text-align: right;
                 @include respond(tab-land) {
                     // margin: 20px;
