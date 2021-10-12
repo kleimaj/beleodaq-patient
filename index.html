@@ -54,7 +54,7 @@
                         <a onclick="approvedUse()" href="javascript:;" class="site-button">Approved Use</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://beleodaq.com/hcp/" class="site-button orange">U.S. Healthcare Providers</a>
+                        <a href="javascript:;" onclick="showModal(1)" class="site-button orange">U.S. Healthcare Providers</a>
                     </li>
                 </ul>
                 <!-- Nav Links -->
@@ -218,6 +218,17 @@
             </div>
         </section>
     </footer>
+    <div class="modal">
+        <h4>For Healthcare Professionals</h4>
+        <p class="light">
+            <strong>Please note:</strong>
+            This site you are about to enter is intended for US healthcare professionals only. Please confirm you are a US healthcare professional.
+        </p>
+        <div class="modal-buttons">
+            <a href="javascript:;" onclick="showModal(0)" class="button secondary"><i class="fas fa-times"></i> Cancel</a>
+        <a href="" target="_blank" class="button continue" onclick="showModal(0)">Yes, I am a US Healthcare Profesional <i class="fas fa-check"></i></a>
+        </div>
+    </div>
     <!-- Angular UI-Router Config -->
     <script src="js/router-config.js"></script>
 </body>

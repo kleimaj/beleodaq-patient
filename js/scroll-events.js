@@ -32,6 +32,14 @@ function showApprovedUse() {
   }
 
 }
+function showModal(setShowModal) {
+  if (setShowModal) {
+    document.querySelector('.modal').classList.add('active');
+    document.querySelector('.continue').setAttribute('href', 'https://beleodaq.com/hcp/');
+  } else {
+    document.querySelector('.modal').classList.remove('active');
+  }
+}
 function toggleISI() {
   let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
   if (window.scrollY > 0 && isMobile) {
