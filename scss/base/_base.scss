@@ -17,7 +17,7 @@ main {
         margin-top: 120px;
     }
     &.push {
-        margin-top: 220px;
+        margin-top: 200px;
         @include respond(tab-land) {
             margin-top: 480px;
         }

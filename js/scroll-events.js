@@ -24,9 +24,15 @@ function toggleISI() {
   if (window.scrollY > 0 && isMobile) {
       document.querySelector('.approved-use').style.display = 'none';
       document.querySelector('main').classList.remove('push');
+      document.getElementById('toggle-isi').style.display = 'inline';
       // document.querySelector('main').style.marginTop = '250px';
-    } else {
+    } 
+    else if (window.scrollY == 0) {
+      document.getElementById('toggle-isi').style.display = 'inline';
+    }
+    else {
       document.querySelector('.approved-use').style.display = 'block';
+      document.getElementById('toggle-isi').style.display = 'none';
       document.querySelector('main').classList.add('push');
       // document.querySelector('main').style.marginTop = "";
     }
