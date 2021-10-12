@@ -21,12 +21,21 @@ header {
         }
         p {
             color: $gray-color;
-            // margin-bottom: 12px;
+            margin-bottom: 12px;
             font-size: 1.4rem;
             line-height: 1.2;
             &:last-of-type {
                 margin: 0;
             }
+        }
+        .toggle-button {
+            color: $secondary-color;
+            position: absolute;
+            right: 30px;
+            font-size: 1.5rem;
+        }
+        #toggle-isi {
+            display: none;
         }
     }
 
@@ -63,8 +72,8 @@ header {
                 order: 2;
             }
             #us-only {
-                margin-bottom: 10px;
-                margin-top: -10px;
+                margin-bottom: 5px;
+                margin-top: -15px;
                 text-align: right;
                 @include respond(tab-land) {
                     // margin: 20px;
