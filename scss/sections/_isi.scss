@@ -1,0 +1,65 @@
+#isi {
+    margin-top: 25px;
+    @include respond(tab-land) {
+        margin-top: 60px;
+    }
+
+    h3 {
+        color: $primary-color;
+    }
+    h5 {
+        color: $secondary-color;
+        padding: 8px 0;
+        font-size: 2.1rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    ul {
+        li {
+            font-size: 1.8rem;
+        }
+    }
+    ol {
+        counter-reset: item;
+
+        li {
+            display: inline;
+            list-style-type: none;
+            counter-increment: item;
+            font-size: 1.4rem;
+            &:before {
+                font-weight: 600;
+                content: counter(item) ". ";
+            }
+        }
+    }
+    .bottom {
+        border-top: 2px solid #166176;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bottom_col:first-of-type {
+            text-align: right;
+            @include respond(tab-land) {
+                text-align: left;
+            }
+        }
+        @include respond(tab-land) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        img {
+            width: 228px;
+        }
+        a {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #000;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    }
+}

@@ -18,6 +18,16 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
               }
             }
         })
+        .state('ISI', {
+          url: '/isi',
+          templateUrl: 'content/isi.html',
+          resolve: {
+            resetNav: function() {
+              resetLinks();
+              document.querySelector('footer').classList.add('hidden');
+            }
+          }
+        })
         .state('PTCL', {
             url: '/about/ptcl',
             templateUrl: 'content/about/ptcl.html',
@@ -192,6 +202,7 @@ function activateLink(linkNumber) {
         .classList.add('active');
 }
 function resetLinks() {
+  document.querySelector('footer').classList.remove('hidden');
   Array.from(document
     .querySelector('.nav-links')
     .getElementsByTagName('li'))
