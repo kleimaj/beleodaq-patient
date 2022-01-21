@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^PI$ /uploads/PI-BELEODAQ-200120.pdf? [NC,L]
+RewriteRule ^PI/$ /uploads/PI-BELEODAQ-200120.pdf? [NC,L]
